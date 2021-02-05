@@ -5,11 +5,39 @@ Show them when they receive the class 'on'
 Hide them when they receive the class 'off'
 Feel free to adjust the defaults to your needs.
 ********************************************** */
+:root {
+  --gradient: linear-gradient(
+  90deg, 
+  #100c07, 
+  #3e3b39, 
+  #6d6a6a,
+  #9b9a9c,
+  #cac9cd,
+  #f8f8ff,
+  );
+
+}
+
+.center {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	margin-top: 10%;
+}
+
+#closed-captions {
+display: flex;
+justify-content: center;
+}
+
+
+
 #closed-captions p {
 	opacity: 0;
 	transition: .05s;
 	position: absolute;
 }
+
 #closed-captions .on {
 	opacity: 1;
 }
@@ -19,6 +47,21 @@ Feel free to adjust the defaults to your needs.
 }
 .voice1 {
 	font-style: italic;
+}
+
+.voice3 {
+	font-style: bold;
+	font-size:70pt;
+}
+.cells {
+	background-image: var(--gradient);
+	background-size: 400%;
+	animation: bg-animation 2s infinite;
+}
+
+@keyframes bg-animation{
+	0% {background-position: left}
+	100% {background-position: right}
 }
 
 /* **********************************************
@@ -102,9 +145,11 @@ Sounds.
 	a sound starts.
 *********************************************  */
 
-/* The moment the class .sound1 is added to the body, the background is yellow */
+/* The moment the class .sound1 is added to the body, the background is black */
 .sound1 {
-	background: yellow;
+	transition: 0.5s;
+	background: black;
+	color: white;
 }
 
 iframe {
