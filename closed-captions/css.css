@@ -5,7 +5,7 @@ Show them when they receive the class 'on'
 Hide them when they receive the class 'off'
 Feel free to adjust the defaults to your needs.
 ********************************************** */
-:root {
+/*:root {
   --gradient: linear-gradient(
   90deg, 
   #100c07, 
@@ -16,7 +16,7 @@ Feel free to adjust the defaults to your needs.
   #f8f8ff,
   );
 
-}
+}*/
 
 .center {
 	margin-left: auto;
@@ -46,14 +46,23 @@ justify-content: center;
 	opacity: 0;
 }
 .voice1 {
-	font-style: italic;
+	font-family: "Brenner Mono";
+	font-style: Normal;
+	font-weight: 400;
+}
+
+.voice2 {
+	font-family: "Brenner Sans Condensed";
+	font-style: Italic;
+	font-weight: 800;
 }
 
 .voice3 {
 	font-style: bold;
 	font-size:70pt;
 }
-.cells {
+
+/*.cells {
 	background-image: var(--gradient);
 	background-size: 400%;
 	animation: bg-animation 2s infinite;
@@ -63,6 +72,7 @@ justify-content: center;
 	0% {background-position: left}
 	100% {background-position: right}
 }
+*/
 
 /* **********************************************
 The first paragraph, with extended timing for 
@@ -159,3 +169,13 @@ iframe {
 .sound1 iframe {
 	transform: rotate(1turn);
 }
+
+.flash {
+	animation: flash linear 1s;
+}
+@keyframes flash {
+	0% {opacity: 1;}
+	50% {opacity: .1;}
+	100% {opacity: 1;}
+}
+
