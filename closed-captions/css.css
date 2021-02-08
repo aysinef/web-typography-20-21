@@ -59,7 +59,16 @@ justify-content: center;
 
 .voice3 {
 	font-style: bold;
-	font-size:70pt;
+	font-size:60pt;
+}
+
+.flash {
+	animation: flash linear 2s infinite;
+}
+@keyframes flash {
+	0% {opacity: 1;}
+	50% {opacity: .1;}
+	100% {opacity: 1;}
 }
 
 /*.cells {
@@ -162,6 +171,26 @@ Sounds.
 	color: white;
 }
 
+.sound3 {
+	background: red;
+}
+.sound4 {
+	background: black;
+}
+.sound5 {
+	background: red;
+}
+.sound6 {
+	background: black;
+}
+.sound7 {
+	background: #3e3b39;
+}
+.sound10 {
+	background: white;
+	color: black;
+}
+
 iframe {
 	transition: 1s;
 }
@@ -170,12 +199,13 @@ iframe {
 	transform: rotate(1turn);
 }
 
-.flash {
-	animation: flash linear 1s;
+/*.flash {
+	animation: flash linear 1s infinite;
 }
 @keyframes flash {
 	0% {opacity: 1;}
 	50% {opacity: .1;}
 	100% {opacity: 1;}
 }
+*/
 
