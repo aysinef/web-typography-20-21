@@ -63,10 +63,6 @@ justify-content: center;
 	font-weight: 800;
 }
 
-.voice3 {
-	font-style: bold;
-	font-size:60pt;
-}
 
 #done {
 	
@@ -82,10 +78,6 @@ justify-content: center;
 	0% {opacity: 1;}
 	50% {opacity: .1;}
 	100% {opacity: 1;}
-}
-
-.flash #done {
-	background-color: white;
 }
 
 /*.cells {
@@ -301,6 +293,11 @@ Sounds.
 .sound10 {
 	background: white;
 	color: black;
+	width: 100%;
+	height:100%;
+	margin-top: 0;
+	z-index: -10;
+	animation: flash linear 2s;
 }
 
 .sound11 {
