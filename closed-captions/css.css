@@ -17,6 +17,12 @@ Feel free to adjust the defaults to your needs.
   );
 
 }*/
+body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	z-index: -10;
+}
 
 .center {
 	margin-left: auto;
@@ -62,13 +68,24 @@ justify-content: center;
 	font-size:60pt;
 }
 
+#done {
+	
+}
 .flash {
+	width: 100%;
+	height:100%;
+	margin-top: 0;
+	z-index: 0;
 	animation: flash linear 2s infinite;
 }
 @keyframes flash {
 	0% {opacity: 1;}
 	50% {opacity: .1;}
 	100% {opacity: 1;}
+}
+
+.flash #done {
+	background-color: white;
 }
 
 /*.cells {
@@ -162,6 +179,85 @@ You probably want to change the styling.
 	color: red;
 	font-size: 30pt;
 }
+
+.p11.on span:first-of-type {
+	color: red;
+	font-size: 20pt;
+}
+
+.p14.on span:first-of-type {
+	color: red;
+	font-size: 20pt;
+}
+
+.p17.on span:first-of-type {
+	color: red;
+	font-size: 20pt;
+}
+
+.p19.on span:first-of-type {
+	color: #FFD500;
+	font-size: 20pt;
+}
+
+.p22.on span:first-of-type {
+	color: #FFD500;
+	font-size: 20pt;
+}
+
+.p25.on span:first-of-type {
+	color: #FFD500;
+	font-size: 20pt;
+}
+
+.p28.on span:first-of-type {
+	color: #FFD500;
+	font-size: 20pt;
+}
+
+.p31.on span:first-of-type {
+	color: #FFD500;
+	font-size: 20pt;
+}
+
+.p33.on span:first-of-type {
+	color: #FFD500;
+	font-size: 20pt;
+}
+
+.p36.on span:first-of-type {
+	color: #FFD500;
+	font-size: 20pt;
+}
+
+#first {
+	color: #E98888;
+}
+
+#second {
+	color: #DC0000;
+}
+
+#third {
+	color: #730E0E;
+}
+
+/*.p41.on span:first-of-type {
+	color: #E98888;
+	font-size: 20pt;
+}
+
+.p42.on span:first-of-type {
+	color: #DC0000;
+	font-size: 20pt;
+}
+
+.p43.on span:first-of-type {
+	color: #730E0E;
+	font-size: 20pt;
+}
+*/
+
 /* **********************************************
 Sounds.
 	You can style the whole body, or you can 
@@ -191,9 +287,24 @@ Sounds.
 .sound7 {
 	background: #3e3b39;
 }
+
+.sound8 .flash {
+	width: 100%;
+	height:100%;
+	margin-top: 0;
+	position: absolute;
+	z-index: 0;
+	background: black;
+	animation: flash linear 2s infinite;
+}
+
 .sound10 {
 	background: white;
 	color: black;
+}
+
+.sound11 {
+	background-color: white;
 }
 
 iframe {
