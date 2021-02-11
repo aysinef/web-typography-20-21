@@ -158,6 +158,10 @@ You probably want to change the styling.
 }
 */
 
+.p8.on span:first-of-type {
+	color: red;
+	font-size: 30pt;
+}
 /* **********************************************
 Sounds.
 	You can style the whole body, or you can 
@@ -200,13 +204,5 @@ iframe {
 	transform: rotate(1turn);
 }
 
-/*.flash {
-	animation: flash linear 1s infinite;
-}
-@keyframes flash {
-	0% {opacity: 1;}
-	50% {opacity: .1;}
-	100% {opacity: 1;}
-}
-*/
+
 
