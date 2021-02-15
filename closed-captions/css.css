@@ -28,12 +28,13 @@ body {
 	margin-left: auto;
 	margin-right: auto;
 	display: block;
-	margin-top: 10%;
+	margin-top: 0%;
+	z-index: 0;
 }
 
 #closed-captions {
-display: flex;
-justify-content: center;
+	display: flex;
+	justify-content: center;
 }
 
 
@@ -58,21 +59,25 @@ justify-content: center;
 }
 
 .voice2 {
-	font-family: "Brenner Sans Condensed";
-	font-style: Italic;
+	font-family: "Brenner Sans Bold";
+}
+
+.voice3 {
+	font-family: "Brenner sans";
+	font-style: normal;
 	font-weight: 800;
 }
 
-
-#done {
-	
+.voice4 {
+	font-family: "Brenner Mono";
 }
+
 .flash {
 	width: 100%;
 	height:100%;
 	margin-top: 0;
 	z-index: 0;
-	animation: flash linear 2s infinite;
+	animation: flash linear 3s;
 }
 @keyframes flash {
 	0% {opacity: 1;}
@@ -168,22 +173,22 @@ You probably want to change the styling.
 */
 
 .p8.on span:first-of-type {
-	color: red;
+	color: #FFD500;
 	font-size: 30pt;
 }
 
 .p11.on span:first-of-type {
-	color: red;
+	color: #FFD500;
 	font-size: 20pt;
 }
 
 .p14.on span:first-of-type {
-	color: red;
+	color: #FFD500;
 	font-size: 20pt;
 }
 
 .p17.on span:first-of-type {
-	color: red;
+	color: #FFD500;
 	font-size: 20pt;
 }
 
@@ -222,16 +227,17 @@ You probably want to change the styling.
 	font-size: 20pt;
 }
 
+
 #first {
-	color: #E98888;
+	font-size: 20pt;
 }
 
 #second {
-	color: #DC0000;
+	font-size: 15pt;
 }
 
 #third {
-	color: #730E0E;
+	font-size: 10pt;
 }
 
 /*.p41.on span:first-of-type {
@@ -287,30 +293,47 @@ Sounds.
 	position: absolute;
 	z-index: 0;
 	background: black;
-	animation: flash linear 2s infinite;
+	animation: flash linear 3s;
+	animation-iteration-count: 25;
 }
 
-.sound10 {
+.sound10 .flash {
 	background: white;
+	transition: 2.5s;
 	color: black;
 	width: 100%;
 	height:100%;
 	margin-top: 0;
 	z-index: -10;
-	animation: flash linear 2s;
+	animation: flash linear 3s;
+	animation-iteration-count: 3;
 }
 
-.sound11 {
+.sound10 {
 	background-color: white;
+	color: black;
+	transition: 2.5s;
 }
 
-iframe {
+/*iframe {
 	transition: 1s;
 }
-/* The moment the class .sound1 is added to the body, the movie makes a turn */
+ The moment the class .sound1 is added to the body, the movie makes a turn 
 .sound1 iframe {
 	transform: rotate(1turn);
 }
 
+.sound1 {
+  animation: slide-in 1s both;
+}
 
+@keyframes slide-in {
+  0% {
+    transform: translateX(-1000px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
 
+*/
